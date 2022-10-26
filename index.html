@@ -17,7 +17,7 @@
         }
         function myFunction3() {
             var number = prompt("Please enter a number", "1");
-            if (number != null) {
+            if (number != null && number == Int16Array) {
                 document.getElementById("demo1").innerHTML = Math.random() * number;
             }
         }
@@ -40,21 +40,22 @@
 
     <p>Function 3: Hello Person</p>
 
-    <button onclick="myFunction2()">Try it</button>
-
     <p id="demo"></p>
+
+    <button onclick="myFunction2()">Try it</button>
 
     <p>Function 4: Math.random()</p>
 
+    <p id="demo1"></p>
+
     <button onclick="myFunction3()">Try it</button>
 
-    <p id="demo1"></p>
 
     <p>Function 5: Math.PI</p>
 
-    <button onclick="myFunction4()">Try it</button>
-
     <p id="demo2"></p>
+
+    <button onclick="myFunction4()">Try it</button>
 
 </body>
 
