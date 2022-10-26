@@ -2,41 +2,61 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8">
-    <title>JavaScript Functions</title>
-</head>
-
-<body>
-    <h1>JavaScript Functions</h1>
-
     <script>
-        // Function 1
+        function myFunction() {
+            alert("I am an alert box!");
+        }
         function myFunction1() {
-            document.write("This is my first function");
+            confirm("Press a button!");
         }
-
-        // Function 2
-        function myFunction2(name) {
-            document.write("Hello, " + name);
+        function myFunction2() {
+            var person = prompt("Please enter your name", "Harry Potter");
+            if (person != null) {
+                document.getElementById("demo").innerHTML = "Hello " + person + "! How are you today?";
+            }
         }
-
-        // Function 3
-        function myFunction3(num1, num2) {
-            document.write(num1 * num2);
+        function myFunction3() {
+            document.getElementById("demo1").innerHTML = Math.random();
         }
-
-        // Function 4
         function myFunction4() {
-            var num1 = 5;
-            var num2 = 10;
-            document.write(num1 + num2);
-        }
-
-        // Function 5
-        function myFunction5(num1, num2) {
-            return num1 + num2;
+            document.getElementById("demo2").innerHTML = Math.PI;
         }
     </script>
+</head>
+<body>
+
+    <h2>What can JavaScript do?</h2>
+
+    <p>JavaScript can change HTML content.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <p>JavaScript can change HTML attribute values.</p>
+
+    <button onclick="myFunction1()">Try it</button>
+
+    <p id="demo1"></p>
+
+    <p>JavaScript can change HTML styles.</p>
+
+    <button onclick="myFunction2()">Try it</button>
+
+    <p id="demo2"></p>
+
+    <p>JavaScript can calculate, manipulate and validate data.</p>
+
+    <button onclick="myFunction3()">Try it</button>
+
+    <p id="demo3"></p>
+
+    <p>JavaScript can be used to detect the visitor's browser.</p>
+
+    <button onclick="myFunction4()">Try it</button>
+
+    <p id="demo4"></p>
+
 </body>
 
 </html>
