@@ -17,7 +17,7 @@
         }
         function myFunction3() {
             var number = prompt("Please enter a number", "1");
-            if (Number.isInteger(number)) {
+            if (number != null && number == RegExp([0 - 9])) {
                 document.getElementById("demo1").innerHTML = Math.random() * number;
             }
         }
